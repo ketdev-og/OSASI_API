@@ -24,7 +24,7 @@ public class RestaurantController {
 
     @GetMapping(SEARCH_REST_BY_CITYNAME)
     List<Restaurant> searchByCity(String cityName){
-        City city = cityService.getCityByName(cityName);
+        City city = cityService.getCityByName(cityName.toUpperCase());
         return restaurantService.getResturantByCity(city);
     }
 

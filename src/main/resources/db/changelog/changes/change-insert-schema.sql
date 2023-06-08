@@ -10,16 +10,16 @@ INSERT INTO restaurant VALUES
                            (5,'Sweet Sensation','info@sweet.com','+23467885656','https://www.vmcdn.ca/f/files/alimoshotoday/images/sweet-sensation-logo.png;w=640');
 
 INSERT INTO city VALUES
-                     (1,'Abuja'),
-                     (2,'Lagos'),
-			         (3,'Ibadan'),
-			         (4, 'Uyo'),
-			         (5, 'Port harcourt'),
-			         (6, 'Enugu'),
-			         (7, 'Asaba'),
-			         (8, 'Kano'),
-			         (9, 'Umuahai'),
-                     (10,'onitsha');
+                     (1,UPPER('Abuja')),
+                     (2,UPPER('Lagos')),
+			         (3,UPPER('Ibadan')),
+			         (4, UPPER('Uyo')),
+			         (5, UPPER('Port harcourt')),
+			         (6, UPPER('Enugu')),
+			         (7, UPPER('Asaba')),
+			         (8, UPPER('Kano')),
+			         (9, UPPER('Umuahai')),
+                     (10,UPPER('onitsha'));
 
 INSERT INTO meal VALUES
                            (
