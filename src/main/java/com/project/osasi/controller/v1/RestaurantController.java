@@ -22,7 +22,7 @@ public class RestaurantController {
         this.cityService = cityService;
     }
 
-    @PostMapping(SEARCH_REST_BY_CITYNAME)
+    @GetMapping(SEARCH_REST_BY_CITYNAME)
     List<Restaurant> searchByCity(String cityName){
         City city = cityService.getCityByName(cityName);
         return restaurantService.getResturantByCity(city);
